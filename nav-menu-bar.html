@@ -1,0 +1,156 @@
+
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    .menu-items{
+      list-style-type: none;
+
+      padding: 0;
+      margin: 0;
+
+    }
+
+
+    #main-menu {
+      
+      background-color: darkgray;
+    }
+
+    #main-menu > li {
+      display: inline-block;
+    }
+
+    #main-menu > li >  a {
+      display: inline-block;
+      padding: 10px;
+
+      color: white;
+      text-decoration: none;
+
+    }
+
+    #main-menu > li > a:hover {
+      background-color: black;
+    }
+
+    #submenu{
+      background-color: lightgray;
+
+      
+    }
+
+    #parent-main-menu-item-2{
+      position: relative;
+    }
+
+    #submenu{
+      position: absolute;
+
+      padding: 15px;
+      top: 45px;
+      left: 10px;
+
+      white-space: nowrap;
+
+      display: none;
+      
+    }
+    #parent-main-menu-item-2:hover #submenu  {
+
+     display: block;
+    }
+
+    #parent-main-menu-item-3{
+      position: relative;
+    }
+
+    #submenu-2{
+      position: absolute;
+
+      padding: 15px;
+      top: 45px;
+      left: 10px;
+
+      white-space: nowrap;
+
+      display: none;
+      background-color: lightgray;
+      
+    }
+    #parent-main-menu-item-3:hover #submenu-2 {
+
+     display: block;
+    }
+
+    h1{
+      background-color: red;
+      text-align: center;
+      padding: 10px;
+      margin: 0%;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <h1>Dropdown Demo</h1>
+
+<nav>
+
+  <ul id="main-menu" class="menu-items">
+    <li>
+      <a href="/link1">Link 1</a>
+    </li>
+    <li id="parent-main-menu-item-2">
+      <a href="/link2">Link 2</a>
+
+      <!-- Add the sub-menu -->
+      <ul id="submenu" class="menu-items">
+        <li>
+          <a href="/dd-link1">DD Link 1</a>
+        </li>
+        <li>
+          <a href="/dd-link2">DD Link 2</a>    
+        </li>
+        <li>
+          <a href="/dd-link3">DD Link 3</a>
+        </li>
+      </ul>
+
+    </li>
+
+
+
+    <li id="parent-main-menu-item-3">
+      <a href="/link3">Link 3</a>
+    
+
+    <!-- Add the sub-menu -->
+    <ul id="submenu-2" class="menu-items">
+      <li>
+        <a href="/dd-link4">DD Link 4</a>
+      </li>
+      <li>
+        <a href="/dd-link5">DD Link 5</a>    
+      </li>
+      <li>
+        <a href="/dd-link6">DD Link 6</a>
+      </li>
+    </ul>
+
+
+  </ul>
+</nav>
+  
+</body>
+
+</html>
+
